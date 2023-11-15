@@ -24,28 +24,28 @@ document.addEventListener('keydown', function(event) {
   if (event.key === '`') {
     backtickPressed = true;
     keysPressed = '';  // Reset the keysPressed for new input
-    event.preventDefault();  // Prevent default behavior
+    //event.preventDefault();  // Prevent default behavior
   } else if (backtickPressed && !isNaN(event.key)) {
     // Record keys if backtick is pressed and the key is a number
     if (keysPressed.length === 1) {
       keysPressed += '.'; // Add a decimal point after the first number
     }
     keysPressed += event.key;
-    event.preventDefault();  // Prevent other behaviors
+    //event.preventDefault();  // Prevent other behaviors
   } else if (event.ctrlKey && event.key === 'ArrowRight') {
     // Increase playback rate by 0.5 when CTRL + Right Arrow is pressed
     var videos = document.querySelectorAll('video');
     videos.forEach(function(video) {
       video.playbackRate += 0.5; // Cap at 16
     });
-    event.preventDefault();  // Prevent other behaviors
+    //event.preventDefault();  // Prevent other behaviors
   } else if (event.ctrlKey && event.key === 'ArrowLeft') {
     // Decrease playback rate by 0.5 when CTRL + Left Arrow is pressed
     var videos = document.querySelectorAll('video');
     videos.forEach(function(video) {
       video.playbackRate = Math.max(video.playbackRate - 0.5, 0.1); // Floor at 0.1
     });
-    event.preventDefault();  // Prevent other behaviors
+    //event.preventDefault();  // Prevent other behaviors
   }
   // show playback rate if using arrow keys
   var videos = document.querySelectorAll('video');
