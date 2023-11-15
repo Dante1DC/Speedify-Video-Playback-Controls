@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Speedify",
+    "version": "1.0",
+    "description": "Control video playback rate with CTRL+Number, written by Dante1DC",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "commands": {
+      "set-playback-rate1": {
+        "suggested_key": {
+          "default": "Ctrl+1"
+        },
+        "description": "Set playback rate to 1x"
+    }
+  }
+}
