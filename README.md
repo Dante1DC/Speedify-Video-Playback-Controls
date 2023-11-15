@@ -12,7 +12,7 @@ I wanted to watch YouTube faster than 2x speed. So I wrote a chrome extension to
 # Function
 Hold CTRL + either the left or right arrow key to add 0.5 to the playback speed. There's no maximum playback speed, and the minimum is 0.1. You can see the playback rate in the bottom right.
 
-Alternatively, hold the '`' (back tick) key, press a number 1-9, and release. It'll set the video to that speed. Alternatively, hold the '`' key, press two numbers (like 2 and then 3), and release, and it'll append a . between the first and second number (so the speed will be 2.3!). 
+Alternatively, hold the '\`' (back tick) key, press a number 1-9, and release. It'll set the video to that speed. Alternatively, hold the '\`' key, press two numbers (like 2 and then 3), and release, and it'll append a . between the first and second number (so the speed will be 2.3!). 
 
 # FAQ
 * Does this work on YouTube ads?
