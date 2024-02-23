@@ -46,7 +46,14 @@ document.addEventListener("keydown", function(event) {
       video.playbackRate = Math.max(video.playbackRate - 0.5, 0.1); // Floor at 0.1
     });
     //event.preventDefault();  // Prevent other behaviors
+  } else if (event.ctrlKey && event.key === "a") {
+    // Make playback rate 10 when CTRL + X is pressed
+    var videos = document.querySelectorAll("video");
+    videos.forEach(function(video) {
+      video.playbackRate = 10;
+    });
   }
+    //event.preventDefault();  // Prevent other behaviors
   // show playback rate if using arrow keys
   var videos = document.querySelectorAll("video");
   if (videos.length > 0 && (event.ctrlKey && (event.key === "." || event.key === ","))) {
