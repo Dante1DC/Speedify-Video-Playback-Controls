@@ -5,6 +5,8 @@ Hold CTRL + either the "<" or ">" key to add 0.5 to the playback speed. There's 
 
 Alternatively, hold the '\`' (back tick) key, press a number 1-9, and release. It'll set the video to that speed. Alternatively, hold the '\`' key, press two numbers (like 2 and then 3), and release, and it'll append a . between the first and second number (so the speed will be 2.3!). 
 
+Finally, you can press "CTRL" and "A" to set the video playback speed to 10x until the end of the video.
+
 # Installation - Chrome
 1. Download from GitHub as zip
 2. Unzip 
